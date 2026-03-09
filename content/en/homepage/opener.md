@@ -1,15 +1,11 @@
 ---
 title: "Hơn cả một bó hoa, là một tâm tình"
 weight: 1
-image: "images/cover-image.jpg"
 ---
-![Mô tả ảnh](/images/cover-image.jpg)
-`Hugo-Scroll` theme alternates colors of sections that are placed on single page.
-The landing screen is meant to be visually striking.
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+  <img src="/images/flowers/bien-xanh-nang-vang.webp" style="width: 45%; height: auto; border-radius: 8px;" alt="Flower 1">
+  <img src="/images/flowers/bien-xanh-nang-vang.webp" style="width: 45%; height: auto; border-radius: 8px;" alt="Flower 2">
+  <img src="/images/flowers/bien-xanh-nang-vang.webp" style="width: 45%; height: auto; border-radius: 8px;" alt="Flower 3">
+  <img src="/images/flowers/bien-xanh-nang-vang.webp" style="width: 45%; height: auto; border-radius: 8px;" alt="Flower 4">
+</div>
 
-Single-page approach is oriented towards small to medium content length, that won't overwhelm the user.
-You can also delegate lengthier, less important or more sizeable content to [dedicated pages](services).
-
-> The belly rules the mind. --- spanish proverb
-
-By the way this welcome section won't show in the cover menu.

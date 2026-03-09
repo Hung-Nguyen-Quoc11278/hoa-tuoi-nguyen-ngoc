@@ -106,4 +106,7 @@ enableEmoji = true
     languageName = "English"
     contentDir = "content/en"
 
-  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
