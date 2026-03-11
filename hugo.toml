@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 theme = "hugo-scroll"
 
 # The browser tab name
-title = "Jane Doe - Hoa Tươi Tây Ninh"
+title = "Hoa Tươi Tây Ninh"
 
 # In order to add version information in the page's footer set to true.
 # enableGitInfo = true
@@ -37,8 +37,7 @@ enableEmoji = true
 
     # Another "title" :-). This one is used as the site_name on the Hugo's internal
     # opengraph structured data template.
-    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "Jane Doe - Hoa Tươi Tây Ninh"
+    title = "Hoa Tươi Tây Ninh"
 
     # The "description" of your website. This is used in the meta data of your generated html.
     description = "Hoa Tươi Tây Ninh"
@@ -52,7 +51,7 @@ enableEmoji = true
 
     # A "copyright"-line to be added at the bottom of the page.
     # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
-    copyright = "© Jane Doe"
+    copyright = " Nguyễn Quốc Hưng"
 
     # This theme will, by default, inject a design-by-line at the bottom of the page.
     # You can turn it off, but we would really appreciate if you don’t :-)
@@ -80,15 +79,12 @@ enableEmoji = true
 
     [[params.contacts]]
         label = "phone"
-        value = "+49 1111 555555"
-        url = "tel:+49 1111 555555"
+        value = "𝟎𝟖𝟏𝟗𝟖𝟕𝟖𝟒𝟓𝟐"
         icon = "fa fa-phone"
-
     [[params.contacts]]
-        label = "email"
-        value = "mail@janedoe.com"
-        url = "mailto:mail@janedoe.com"
-        icon = "fa fa-envelope"
+        label = "phone"
+        value = "𝟎𝟗𝟔𝟏𝟗𝟓𝟓𝟔𝟓𝟐 "
+        icon = "fa fa-phone"
 
     
 

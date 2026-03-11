@@ -4,6 +4,7 @@
     {{- partial "head.html" . -}}
   </head>
   <body>
+    
     {{- partial "header.html" . -}}
     {{- block "main" . }}{{- end }}
     {{- partial "footer.html" . -}}
@@ -27,4 +28,65 @@
              your local /layouts/partials-directory -->
     {{- partial "custom_body.html" . -}}
   </body>
+  <style>
+    /* CSS này sẽ ép hiển thị bất chấp cấu trúc theme */
+    #contact-fixed-all {
+        position: fixed !important;
+        bottom: 100px !important; /* Đẩy cao lên để tránh thanh công cụ mobile */
+        right: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        z-index: 9999999 !important;
+        pointer-events: auto !important;
+        transform: translateZ(0); /* Ép trình duyệt render trên lớp trên cùng */
+        -webkit-transform: translateZ(0);
+    }
+
+    .btn-item {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+
+    /* Màu sắc */
+    .btn-phone { background-color: #4CAF50 !important; color: white !important; }
+    .btn-zalo { background-color: #0068FF !important; }
+    .btn-mess { background-color: #0084FF !important; color: white !important; }
+
+    .btn-item i { font-size: 24px !important; }
+    .btn-zalo img { width: 30px !important; height: 30px !important; }
+
+    /* Fix cho Mobile nếu vẫn bị ẩn */
+    @media screen and (max-width: 768px) {
+        #contact-fixed-all {
+            bottom: 80px !important;
+            right: 15px !important;
+        }
+        .btn-item {
+            width: 45px !important;
+            height: 45px !important;
+        }
+    }
+</style>
+
+<div id="contact-fixed-all">
+    <a href="https://m.me/your_username" target="_blank" class="btn-item btn-mess">
+        <i class="fab fa-facebook-messenger"></i>
+    </a>
+    
+    <a href="https://zalo.me/090xxxxxxx" target="_blank" class="btn-item btn-zalo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+    </a>
+    
+    <a href="tel:090xxxxxxx" class="btn-item btn-phone">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
 </html>

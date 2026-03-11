@@ -34,10 +34,10 @@
 
 
 
-<link rel="stylesheet" href="/css/style.min.555dbb331d6ba7ad5c29dde953a1a4ba2b2534638d091a456e6b6b5096ea1af9.css" type="text/css" integrity="sha256-VV27Mx1rp61cKd3pU6GkuislNGONCRpFbmtrUJbqGvk=" />
+<link rel="stylesheet" href="/css/style.min.c05b6d90f6d72a7ef61246b3d97c4b47d26123df3e3b1499b23ad7d13c618e70.css" type="text/css" integrity="sha256-wFttkPbXKn72Ekaz2XxLR9JhI98&#43;OxSZsjrX0TxhjnA=" />
 
 <meta property="og:url" content="http://localhost:1313/404.html">
-  <meta property="og:site_name" content="Jane Doe - Hoa Tươi Tây Ninh">
+  <meta property="og:site_name" content="Hoa Tươi Tây Ninh">
   <meta property="og:title" content="404 Page not found">
   <meta property="og:description" content="Hoa Tươi Tây Ninh">
   <meta property="og:locale" content="en">
@@ -76,7 +76,7 @@
     <article class="post page">
       <header class="post-header">
         <a id="blog-logo" href="/">
-          Jane Doe - Hoa Tươi Tây Ninh
+          Hoa Tươi Tây Ninh
         </a>
       </header>
       <h1 class="post-title">404 - Page Not Found</h1>
@@ -97,7 +97,7 @@
     
 
     
-      <section class="copyright">© Jane Doe</section>
+      <section class="copyright"> Nguyễn Quốc Hưng</section>
     
 
     
@@ -125,4 +125,65 @@
 
     
 </body>
+  <style>
+     
+    #contact-fixed-all {
+        position: fixed !important;
+        bottom: 100px !important;  
+        right: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        z-index: 9999999 !important;
+        pointer-events: auto !important;
+        transform: translateZ(0);  
+        -webkit-transform: translateZ(0);
+    }
+
+    .btn-item {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+
+     
+    .btn-phone { background-color: #4CAF50 !important; color: white !important; }
+    .btn-zalo { background-color: #0068FF !important; }
+    .btn-mess { background-color: #0084FF !important; color: white !important; }
+
+    .btn-item i { font-size: 24px !important; }
+    .btn-zalo img { width: 30px !important; height: 30px !important; }
+
+     
+    @media screen and (max-width: 768px) {
+        #contact-fixed-all {
+            bottom: 80px !important;
+            right: 15px !important;
+        }
+        .btn-item {
+            width: 45px !important;
+            height: 45px !important;
+        }
+    }
+</style>
+
+<div id="contact-fixed-all">
+    <a href="https://m.me/your_username" target="_blank" class="btn-item btn-mess">
+        <i class="fab fa-facebook-messenger"></i>
+    </a>
+    
+    <a href="https://zalo.me/090xxxxxxx" target="_blank" class="btn-item btn-zalo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+    </a>
+    
+    <a href="tel:090xxxxxxx" class="btn-item btn-phone">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
 </html>
